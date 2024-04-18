@@ -1,0 +1,76 @@
+.container {
+    background-image: url('../../images/Group\ 139.png');
+    background-size: cover;
+    color: white;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 1rem;
+
+  }
+
+    
+.info-name1{
+    font-size:100px;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;   
+   
+}
+.info-name{
+    font-size: 35px;
+}
+
+
+.option{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center; 
+    gap: 2em;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    
+}
+
+    
+.image-class1 {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0); 
+    color: white;
+    padding: 19px;
+}
+
+.overlay-text p {
+    margin: 0; 
+}
+
+.tag-line{
+    background-color: aqua;
+    padding:2rem;
+    margin-bottom: 4rem;
+}
+
+.tag-title{
+    font-size: 3rem;
+    color: rgb(188, 37, 107);
+}
+.tag-subtitle{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: brown;
+    
+}
+
+.truemaster{
+    font-size: larger;
+    font-weight: bolder;
+}
