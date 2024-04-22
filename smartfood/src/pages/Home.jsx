@@ -1,9 +1,8 @@
 import React from "react";
 import Footer from "../components/Footer/footer";
-import Layout  from "../components/Layout/Layout";
+import Header  from "../components/Layout/Header";
 import "./cssfile/home.css";
 import image1 from "../images/Group\ 140.png";
-import { Link } from 'react-router-dom';
 import image2 from "../images/Group\ 141.png";
 import image3 from "../images/Group\ 142.png";
 
@@ -11,10 +10,11 @@ const Home = () => {
 
     return(
         <div className="MAIN">
-            <Layout/>
+            <Header></Header>
+            
             <div className="container">
                 <div>
-                    <h2 className="info-name1">MOOD EAT</h2>
+                    <h2 className="info-name1">Mood Eat</h2>
                 </div>
                 <div>
                     <h2 className="info-name">Get the best food and drink at your door now </h2>

@@ -1,0 +1,42 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+.counter{
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.Minu-item, .Add-item{
+    border: none;
+    cursor: pointer;
+    background-color: #c66464;
+    color: #D9D9D9;
+    font-size: 1.5rem;
+    height: 30px;
+    width: 30px;
+}
+
+.counter > button:hover {
+    background-color: #443e3e;
+    color: #D9D9D9;
+}
+
+.counter--count {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+}
+
+.counter-css{
+    background-color: rgb(67, 97, 134);
+    border: 2px solid black;
+    padding: 1px 7px 1px 7px;
+    color: rgb(255, 255, 255);
+}

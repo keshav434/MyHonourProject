@@ -18,6 +18,7 @@
   .product-info{
     
     border-radius: 20px;
+    background-color: beige;
    
   }
   .product-name{
@@ -25,6 +26,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    
     
   
   
@@ -41,6 +43,7 @@
   
   .product-information{
     margin-left: 1rem;
+
     
   }
   
@@ -60,7 +63,7 @@
   .product-information{
     background-color: #6bce6b;
     color: #ffffff;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -75,10 +78,16 @@
     
   }
   .product-key{
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 0.2rem;
+    
   }
   .star{
     font-size: 1.2rem;
     margin-bottom: 0.2rem;
+  }
+
+  .Restuarant-btn{
+    text-decoration: none;
+    color: black;
   }

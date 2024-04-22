@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../components/Footer/footer";
-import Navbar  from "../components/navbar/navbar";
 import ImageSlider from "../components/ImageSlider";
 import Bowl from "../images/cropped-bowl.png";
 import wing from "../images/cropped-chicken.png";
@@ -15,6 +14,9 @@ import icon from "../images/Male Thinking.png";
 import "../pages/cssfile/menupage.css";
 import  data from "../components/Restuarantdata";
 import Restuarant from "../components/Restuarant";
+import Header from "../components/Layout/Header";
+import { Link } from 'react-router-dom';
+
 
 
 const MenuPage = () => {
@@ -31,7 +33,8 @@ const MenuPage = () => {
         ];
     return(
         <div>
-            <Navbar/>
+            <Header></Header>
+            
             <h1 className="slider-title">What's on your mind?</h1>
             <ImageSlider images={dish} />
             <div className="filter-container">
@@ -66,7 +69,7 @@ const MenuPage = () => {
                 <div><p> Answer few questions which will help us to tell you what is best for you today</p></div>
                 <div className="info-render">
                     <div><p>Assessment time estimated : 3 - 4 mins</p></div>
-                    <div className="button-containerbite"><button className="explore-button">Explore now</button></div>
+                    <div className="button-containerbite"><Link to="/mood" className='explore-button'>Explore</Link></div>
                 </div>
             </div>
             </div>

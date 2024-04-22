@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Restuarant.css"
+import { Link } from 'react-router-dom';
 
 const Restuarant = ({ productData }) => {
   return (
@@ -7,8 +8,9 @@ const Restuarant = ({ productData }) => {
       {productData.map(product => (
         <div>
 
-        <div key={product.id}> <button className='Restuarant-btn'>
-          <div className='product-info'>
+        <div key={product.id}> 
+        <Link to={`/menu/${product.id}`} className='Restuarant-btn'>
+          <div className='product-info'> 
                <div>
                    <img src={product.img} alt={product.name}  className='image-rst'/>
                 </div>
@@ -46,7 +48,8 @@ const Restuarant = ({ productData }) => {
           
           
         </div>
-        </button></div>
+        </Link>
+        </div>
         </div>
       ))}
     </div>

@@ -16,10 +16,16 @@
     font-weight: bolder;
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;   
+    margin-left: 35%;
+    margin-top: 12rem;
+    color: bisque;
+    
    
 }
 .info-name{
     font-size: 35px;
+    margin-left: 29%;
+    color: bisque;
 }
 
 
@@ -56,7 +62,7 @@
 .tag-line{
     background-color: aqua;
     padding:2rem;
-    margin-bottom: 4rem;
+    padding-left: 15%;
 }
 
 .tag-title{

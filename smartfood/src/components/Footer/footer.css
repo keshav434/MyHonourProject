@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: rgb(185, 242, 236);
+}
+
+
+.classifier{
+    display: flex;
+    gap: 15%;
+    justify-content:center;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.feedback-div{
+}
+
+.social-icon{
+    display: flex;
+}
+
+.div-same{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.div-same ,p{
+   font-size: large;
+}
