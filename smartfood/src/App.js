@@ -16,7 +16,7 @@ function App() {
         <Link to= "/"> Mood Eat</Link>
         <NavLink to="about">Home</NavLink>
         <NavLink to="cart">Cart</NavLink>
-        <NavLink to="mood">Mood</NavLink>
+
         
         </nav>
         </header>
@@ -25,7 +25,6 @@ function App() {
         <Route path='/' element={<Plated />} />
         <Route path='about' element={<MenuPage />} />
         <Route path='/menu/:id' element={<Menu />} />
-        <Route path='/mood' element={<Mood />} />
         </Routes>
        </main>
     </BrowserRouter>
