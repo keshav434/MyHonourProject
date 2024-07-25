@@ -1,8 +1,8 @@
-Building Online food applications like UberEats, Deliveroo etc.
+We are building Online food applications like Uber Eats, Deliveroo etc.
 
 Tech-Stack
 1. Frontend: Using HTML, CSS and JavaScript with React as the framework.
-2. Backend: Using Node JS with Express as the framework.
+2. Backend: 
 3. Database: Using MySQL
 
 Primary Objectives
