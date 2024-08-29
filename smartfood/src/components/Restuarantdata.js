@@ -26,21 +26,21 @@ const data ={
             offers:true,
             mood:"add",
             menu: [
-                { itemNamelog: 'Stacked Buffalo Burger', description:"Crispy buffalo chicken served with house mayo, red onions and shredded lettuce, served in a fresh brioche bun.", price: 9.99, category:"Burger" },
-                { itemNamelog: 'Korean Gochujang BBQ Burger', description:"Sticky Korean Gochujang BBQ chicken, with house mayo, red onions, and shredded lettuce, served in a fresh brioche bun.", price: 9.99,category:"Burger"},
-                { itemNamelog: '5Spice Burger', description:'Our 5 spicy chicken is served with house mayo, red onions and shredded lettuce, served in a fresh brioche bun.', price: 9.99,category:"Burger"},
-                { itemNamelog: 'Buffalo Wings', description:'Fresh and crispy wings tossed in our tantalising buffalo sauce and finished with cilantro. A house favourite!', price: 9.99,category:"Wings"},
-                { itemNamelog: '5Spice Wings', description:'Our fresh 5 spice blend adds a touch of spice with mouthwatering flavours, topped with spring onions, soy sauce, and chilli slices.', price: 9.99,category:"Wings"},
-                { itemNamelog: 'Korean Gochujang BBQ Wings', description:'Sticky Korean BBQ wings topped with sesame seeds, and spring onions.', price: 9.99,category:"Wings"},
-                { itemNamelog: 'Portobello & Halloumi Burger', description:'A seasoned and grilled portobello mushroom, served with grilled halloumi, sweet grilled peppers, caramelised onions, tomato, baby leaf salad, house mayo and spicy guacamole', price: 9.99,category:"Veggie"},
-                { itemNamelog: 'Sharing Nachos', description:'Served with salsa, jalapenos, sour cream, spicy guacamole and melted cheese sauce.', price: 9.99,category:"Sides"},
-                { itemNamelog: 'Messy Fries', description:'Our house fries topped with melted cheese and cajun.', price: 9.99,category:"Sides"},
-                { itemNamelog: 'Mango Thickshake', description:'', price: 9.99,category:"Drinks"},
-                { itemNamelog: 'Pepsi Max', description:'The original Pepsi. Robust in flavour and deeply refreshing. Delivered cold.', price: 9.99,category:"Drinks"},
-                { itemNamelog: 'Diet Pepsi Cola Can, 330ml', description:'No sugar, no calories. Crisp in flavour and deeply refreshing. Delivered cold.', price: 9.99,category:"Drinks"},
-                { itemNamelog: 'Buffalo Dip', price: 9.99,category:"Dips"},
-                { itemNamelog: 'Ranch Dip', price: 9.99,category:"Dips"},
-                { itemNamelog: 'Blue Cheese Dip', price: 9.99,category:"Dips"},
+                { menuid:1, itemNamelog: 'Stacked Buffalo Burger', description:"Crispy buffalo chicken served with house mayo, red onions and shredded lettuce, served in a fresh brioche bun.", price: 9.99, category:"Burger" },
+                { menuid:2, itemNamelog: 'Korean Gochujang BBQ Burger', description:"Sticky Korean Gochujang BBQ chicken, with house mayo, red onions, and shredded lettuce, served in a fresh brioche bun.", price: 9.99,category:"Burger"},
+                { menuid:3, itemNamelog: '5Spice Burger', description:'Our 5 spicy chicken is served with house mayo, red onions and shredded lettuce, served in a fresh brioche bun.', price: 9.99,category:"Burger"},
+                { menuid:4, itemNamelog: 'Buffalo Wings', description:'Fresh and crispy wings tossed in our tantalising buffalo sauce and finished with cilantro. A house favourite!', price: 9.99,category:"Wings"},
+                { menuid:5, itemNamelog: '5Spice Wings', description:'Our fresh 5 spice blend adds a touch of spice with mouthwatering flavours, topped with spring onions, soy sauce, and chilli slices.', price: 9.99,category:"Wings"},
+                { menuid:6, itemNamelog: 'Korean Gochujang BBQ Wings', description:'Sticky Korean BBQ wings topped with sesame seeds, and spring onions.', price: 9.99,category:"Wings"},
+                { menuid:7, itemNamelog: 'Portobello & Halloumi Burger', description:'A seasoned and grilled portobello mushroom, served with grilled halloumi, sweet grilled peppers, caramelised onions, tomato, baby leaf salad, house mayo and spicy guacamole', price: 9.99,category:"Veggie"},
+                { menuid:8, itemNamelog: 'Sharing Nachos', description:'Served with salsa, jalapenos, sour cream, spicy guacamole and melted cheese sauce.', price: 9.99,category:"Sides"},
+                { menuid:9, itemNamelog: 'Messy Fries', description:'Our house fries topped with melted cheese and cajun.', price: 9.99,category:"Sides"},
+                { menuid:10, itemNamelog: 'Mango Thickshake', description:'', price: 9.99,category:"Drinks"},
+                { menuid:11, itemNamelog: 'Pepsi Max', description:'The original Pepsi. Robust in flavour and deeply refreshing. Delivered cold.', price: 9.99,category:"Drinks"},
+                { menuid:12, itemNamelog: 'Diet Pepsi Cola Can, 330ml', description:'No sugar, no calories. Crisp in flavour and deeply refreshing. Delivered cold.', price: 9.99,category:"Drinks"},
+                { menuid:13, itemNamelog: 'Buffalo Dip', price: 9.99,category:"Dips"},
+                { menuid:14, itemNamelog: 'Ranch Dip', price: 9.99,category:"Dips"},
+                { menuid:15, itemNamelog: 'Blue Cheese Dip', price: 9.99,category:"Dips"},
 
             ]
                 
@@ -59,10 +59,10 @@ const data ={
             offers:true,
             mood:"add",
             menu: [
-                { itemNamelog: 'Margherita', price: 8.99, category:"Pizzas"},
-                { itemNamelog: 'Pepperoni', price: 9.99, category:"Pizzas" },
-                { itemNamelog: 'Spaghetti Bolognese', price: 8.99,category:"Pizzas" },
-                { itemNamelog: 'Calzone Classico', price: 9.99 ,category:"Pizzas"},
+                { menuid:1, itemNamelog: 'Margherita', price: 8.99, category:"Pizzas"},
+                { menuid:2, itemNamelog: 'Pepperoni', price: 9.99, category:"Pizzas" },
+                { menuid:3, itemNamelog: 'Spaghetti Bolognese', price: 8.99,category:"Pizzas" },
+                { menuid:4, itemNamelog: 'Calzone Classico', price: 9.99 ,category:"Pizzas"},
             ]
     
         },
@@ -79,10 +79,10 @@ const data ={
             offers:false,
             mood:"add",
             menu: [
-                { itemNamelog: 'Margherita', price: 8.99 },
-                { itemNamelog: 'Pepperoni', price: 9.99 },
-                { itemNamelog: 'Spaghetti Bolognese', price: 8.99 },
-                { itemNamelog: 'Calzone Classico', price: 9.99 },
+                { menuid:1, itemNamelog: 'Margherita', price: 8.99 },
+                { menuid:2, itemNamelog: 'Pepperoni', price: 9.99 },
+                { menuid:3, itemNamelog: 'Spaghetti Bolognese', price: 8.99 },
+                { menuid:4, itemNamelog: 'Calzone Classico', price: 9.99 },
             ]
             
         },

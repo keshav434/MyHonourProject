@@ -1,68 +1,114 @@
-.slider-title{
-    margin-left: 4rem;
-    margin-bottom: 1rem;
+
+.menu-page {
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-.filter-container{
+
+.search-container {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-left: 4rem;
-    margin-top: 2rem;
+    justify-content: center;
+    margin: 1rem 0;
 }
+
+
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #aaa;
+}
+
+.slider-title {
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 4rem;
+}
+
 
 .btn {
     padding: 10px 20px;
     border: none;
-    border-radius:  20px;
-    border: 1px solid black;
+    border-radius: 20px;
     background-color: #f2f2f2;
+    color: #333;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+    font-size: 0.9rem;
+}
 
-  .btn:hover {
+.btn:hover {
     background-color: #ddd;
-    
-  }
+}
 
-.container-bite{
-    background-color: yellow;
+.filter-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+
+.container-bite {
+    background-color: #fff;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    margin-left: 4rem;
-    margin-right:8rem;
-    padding-bottom: 2rem;
-    margin-bottom: 4rem;
-    border: 1px solid black;
+    margin: 2rem 4rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.info-bite{
+
+
+.info-bite {
     font-weight: 500;
-
 }
 
-.icon-bite{
-    margin-top: 2rem;
-    margin-right: 3rem;
-    margin-left: 4rem;
+.icon-bite {
+    margin-top: 1.5rem;
+    margin-right: 2rem;
 }
 
-.info-render{
+
+.info-render {
     display: flex;
+    align-items: center;
 }
 
-.button-containerbite{
+
+.button-containerbite {
     margin-top: 1rem;
-    margin-left: 27rem;
 }
 
-.explore-button{
+
+.explore-button {
     padding: 10px 20px;
     border: none;
-    border-radius:  20px;
-    border: 1px solid black;
+    border-radius: 20px;
     background-color: #f2f2f2;
+    color: #333;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #ddd;
 }

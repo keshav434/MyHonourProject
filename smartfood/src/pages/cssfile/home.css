@@ -1,82 +1,137 @@
-.container {
+
+.main {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+.hero-container {
     background-image: url('../../images/Group\ 139.png');
     background-size: cover;
-    color: white;
+    background-position: center;
+    color: #fff;
     height: 35rem;
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    gap: 1rem;
-
-  }
-
-    
-.info-name1{
-    font-size:100px;
-    font-weight: bolder;
-    font-style: normal;
-    font-family: 'Times New Roman', Times, serif;   
-    margin-left: 35%;
-    margin-top: 12rem;
-    color: bisque;
-    
-   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
-.info-name{
-    font-size: 35px;
-    margin-left: 29%;
-    color: bisque;
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #f5deb3;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: #f5deb3;
+    margin: 0;
 }
 
 
-.option{
+.options-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content:center; 
-    gap: 2em;
-    padding-top: 4rem;
-    margin-bottom: 4rem;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
 }
 
-    
-.image-class1 {
+
+.option-card {
     position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.overlay-text {
+.option-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.option-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0); 
-    color: white;
-    padding: 19px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid #f5deb3;
+    transition: background 0.3s ease;
 }
 
-.overlay-text p {
-    margin: 0; 
+.option-overlay:hover {
+    background: rgba(0, 0, 0, 0.7);
 }
 
-.tag-line{
-    background-color: aqua;
-    padding:2rem;
-    padding-left: 15%;
+.option-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
 }
 
-.tag-title{
-    font-size: 3rem;
-    color: rgb(188, 37, 107);
-}
-.tag-subtitle{
-    font-size: 1.5rem;
-    font-weight: bolder;
-    color: brown;
-    
+.option-overlay p {
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
-.truemaster{
-    font-size: larger;
-    font-weight: bolder;
+
+.promo-section {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 2rem 10%;
+    text-align: center;
+}
+
+.promo-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #bc4b73;
+}
+
+.promo-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #8b4513;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option-card {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .promo-section {
+        padding: 2rem 5%;
+    }
 }

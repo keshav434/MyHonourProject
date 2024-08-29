@@ -1,65 +1,89 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import data from "../components/Restuarantdata"
-import "../pages/cssfile/Menu.css"
-import Count from "../components/count"
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import data from "../components/Restuarantdata";
+import "../pages/cssfile/Menu.css";
+import Count from "../components/count";
 import Footer from "../components/Footer/footer";
+import { CartContext } from "../contexts/CardContext";
+
 const Menu = () => {
-  const { id } = useParams(); 
+  const { id } = useParams();
+  const { addToCart } = useContext(CartContext); // Ensure addToCart is obtained correctly
+
+  const [showNotification, setShowNotification] = useState(false);
+
   const restID = data.productData.find(item => item.id === parseInt(id));
 
-  const Categorymenu = restID.menu.reduce((aco, item) => {
-    if (!aco[item.category]) {aco[item.category] = [];}
-    aco[item.category].push(item);
-    return aco;
+  if (!restID) {
+    return <div>Restaurant not found</div>;
+  }
+
+  const Categorymenu = restID.menu.reduce((acc, item) => {
+    if (!acc[item.category]) {
+      acc[item.category] = [];
+    }
+    acc[item.category].push(item);
+    return acc;
   }, {});
 
-  
+  const handleAddToCart = (item) => {
+    console.log('Adding item to cart:', item);
+    if (addToCart) {
+      addToCart(item);
+      setShowNotification(true);
+      setTimeout(() => setShowNotification(false), 3000);
+    } else {
+      console.error('addToCart function is not available');
+    }
+  };
+
   return (
-    <div>
-      <Link to="/about" className='menu-back'>Back</Link>
-        <div className='menu-info-div'>
-            <div className='image-menus-item'>
-            <img src={restID.img} className='image-menu'/>
-            </div>
+    <div className='menu-container'>
+      <Link to="/about" className='menu-back'>← Back to Restaurants</Link>
 
-              <div className='menu-class-info'>
-            <p className='name-menu'> {restID.name}</p>
-            <p className='name-menu-info'> Rating : {restID.Rating}/5</p>
-            <p className='name-menu-info'> Distance : {restID.distance} mile</p>
-
-            <p className='name-menu-info'> Delivery time : {restID.time}</p>
-            <p className='name-menu-info'> Delivery total fee: £{restID.fee}</p>
-            <p className='name-menu-info'> Hygiene rate : {restID.Hygiene}/5</p>
-            </div> 
+      {showNotification && (
+        <div className='notification'>
+          Item added to cart! <Link to="/cart" className='view-cart-link'>View Cart</Link>
         </div>
-   
-        <ul>
+      )}
+
+      <div className='menu-info'>
+        <div className='menu-header'>
+          <img src={restID.img} className='menu-image' alt={`${restID.name}`} />
+          <div className='menu-details'>
+            <h1 className='menu-name'>{restID.name}</h1>
+            <p className='menu-detail'>Rating: {restID.Rating}/5</p>
+            <p className='menu-detail'>Distance: {restID.distance} miles</p>
+            <p className='menu-detail'>Delivery time: {restID.time}</p>
+            <p className='menu-detail'>Delivery fee: £{restID.fee}</p>
+            <p className='menu-detail'>Hygiene rating: {restID.Hygiene}/5</p>
+          </div>
+        </div>
+      </div>
+
+      <div className='menu-categories'>
         {Object.entries(Categorymenu).map(([category, items]) => (
-          <div className='main-menudiv'>
-            <h3 className='cat-type'>{category}</h3>
-               {items.map(item => (
-                 <div className='menu-div'>
-                 <div className='item-div'>
-                  <p className='item-mneuname'>{item.itemNamelog}</p>
-                  <p className='item-desc'>{item.description}</p>
-                 </div>
-                 <div className='price-div'>
-                  <p className='menu-prices'>£{item.price}</p>
+          <div key={category} className='category-section'>
+            <h3 className='category-title'>{category}</h3>
+            {items.map(item => (
+              <div key={item.menuid} className='menu-item'>
+                <div className='item-details'>
+                  <p className='item-name'>{item.itemNamelog}</p>
+                  <p className='item-description'>{item.description}</p>
                 </div>
-                <div>
-                  <Count />
-                </div>  
+                <div className='item-actions'>
+                  <p className='item-price'>£{item.price}</p>
+                  <Count item={item} onAdd={() => handleAddToCart(item)} />
+                </div>
               </div>
             ))}
           </div>
         ))}
-      </ul>
-      <Footer></Footer>
+      </div>
+      
+      <Footer />
     </div>
   );
 };
-
 
 export default Menu;

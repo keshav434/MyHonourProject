@@ -1,42 +1,46 @@
-*{
-   padding: 0;
-   margin: 0;
-}
-.counter{
-    display: flex;
-    align-items: flex-end;
-    gap: 0.5rem;
-}
-
-.Minu-item, .Add-item{
+/* Counter Buttons */
+.counter-button {
     border: none;
     cursor: pointer;
-    background-color: #c66464;
-    color: #D9D9D9;
     font-size: 1.5rem;
-    height: 30px;
-    width: 30px;
-}
-
-.counter > button:hover {
-    background-color: #443e3e;
-    color: #D9D9D9;
-}
-
-.counter--count {
-    background-color: white;
-    height: 100px;
-    width: 100px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
+    color: #ffffff;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #262626;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.counter-css{
-    background-color: rgb(67, 97, 134);
-    border: 2px solid black;
-    padding: 1px 7px 1px 7px;
-    color: rgb(255, 255, 255);
+.counter-button.minus {
+    background-color: #f45b69;
+}
+
+.counter-button.minus:hover {
+    background-color: #e04a58;
+    transform: scale(1.1);
+}
+
+.counter-button.add {
+    background-color: #4caf50;
+}
+
+.counter-button.add:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);
+}
+
+/* Counter Display */
+.counter-display {
+    background-color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-number {
+    font-size: 2rem;
+    color: #444;
+    margin: 0;
 }
