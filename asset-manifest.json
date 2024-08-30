@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/MyHonourProject/static/css/main.2706e682.css",
+    "main.js": "/MyHonourProject/static/js/main.b5a62f43.js",
+    "static/media/Group 139.png": "/MyHonourProject/static/media/Group 139.6c67497baf9c0da84e2e.png",
+    "static/media/Group 140.png": "/MyHonourProject/static/media/Group 140.c9d58b646f91b13ca22a.png",
+    "static/media/Group 141.png": "/MyHonourProject/static/media/Group 141.686788f90a41a508b2a2.png",
+    "static/media/Group 142.png": "/MyHonourProject/static/media/Group 142.79738151f419e367ea3b.png",
+    "static/media/pexels-photo-1527602 1.png": "/MyHonourProject/static/media/pexels-photo-1527602 1.eb9c8593fb062bb67f9c.png",
+    "static/media/authentic-greek-1649223_640 1.png": "/MyHonourProject/static/media/authentic-greek-1649223_640 1.99b1480fec6c73fe3ebd.png",
+    "static/media/free-photo-of-burgers-and-french-fries-in-box 1.png": "/MyHonourProject/static/media/free-photo-of-burgers-and-french-fries-in-box 1.3bd3b6eb6b79fe890739.png",
+    "static/media/burger-3962997_640 1.png": "/MyHonourProject/static/media/burger-3962997_640 1.0e399fec4da1f139261a.png",
+    "static/media/burger-2034433_640 1.png": "/MyHonourProject/static/media/burger-2034433_640 1.139d3b146dc3211a7535.png",
+    "static/media/ice-cream-3611698_640 1.png": "/MyHonourProject/static/media/ice-cream-3611698_640 1.00474bb2adf759e11909.png",
+    "static/media/chinese-5233516_640 1.png": "/MyHonourProject/static/media/chinese-5233516_640 1.1df54185c463c904e316.png",
+    "static/media/indian-food-3856050_640 1.png": "/MyHonourProject/static/media/indian-food-3856050_640 1.35b8035178f75599f5c2.png",
+    "static/media/pexels-rdne-stock-project-6412954 2.png": "/MyHonourProject/static/media/pexels-rdne-stock-project-6412954 2.2d909cc376fca1129ed7.png",
+    "static/media/sandwich-311262_640 1.png": "/MyHonourProject/static/media/sandwich-311262_640 1.768aea546c31b8c57ce4.png",
+    "static/media/cropped-pizza-306495_640 1.png": "/MyHonourProject/static/media/cropped-pizza-306495_640 1.ab6a272a599319c79b5e.png",
+    "static/media/cropped-sushi-4683661_640 1.png": "/MyHonourProject/static/media/cropped-sushi-4683661_640 1.1e6745566386bd291b7a.png",
+    "index.html": "/MyHonourProject/index.html",
+    "main.2706e682.css.map": "/MyHonourProject/static/css/main.2706e682.css.map",
+    "main.b5a62f43.js.map": "/MyHonourProject/static/js/main.b5a62f43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2706e682.css",
+    "static/js/main.b5a62f43.js"
+  ]
+}
