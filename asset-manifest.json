@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyHonourProject/static/css/main.2706e682.css",
-    "main.js": "/MyHonourProject/static/js/main.b5a62f43.js",
+    "main.css": "/MyHonourProject/static/css/main.ee0994f4.css",
+    "main.js": "/MyHonourProject/static/js/main.48add83f.js",
     "static/media/Group 139.png": "/MyHonourProject/static/media/Group 139.6c67497baf9c0da84e2e.png",
     "static/media/Group 140.png": "/MyHonourProject/static/media/Group 140.c9d58b646f91b13ca22a.png",
     "static/media/Group 141.png": "/MyHonourProject/static/media/Group 141.686788f90a41a508b2a2.png",
@@ -19,11 +19,11 @@
     "static/media/cropped-pizza-306495_640 1.png": "/MyHonourProject/static/media/cropped-pizza-306495_640 1.ab6a272a599319c79b5e.png",
     "static/media/cropped-sushi-4683661_640 1.png": "/MyHonourProject/static/media/cropped-sushi-4683661_640 1.1e6745566386bd291b7a.png",
     "index.html": "/MyHonourProject/index.html",
-    "main.2706e682.css.map": "/MyHonourProject/static/css/main.2706e682.css.map",
-    "main.b5a62f43.js.map": "/MyHonourProject/static/js/main.b5a62f43.js.map"
+    "main.ee0994f4.css.map": "/MyHonourProject/static/css/main.ee0994f4.css.map",
+    "main.48add83f.js.map": "/MyHonourProject/static/js/main.48add83f.js.map"
   },
   "entrypoints": [
-    "static/css/main.2706e682.css",
-    "static/js/main.b5a62f43.js"
+    "static/css/main.ee0994f4.css",
+    "static/js/main.48add83f.js"
   ]
 }
